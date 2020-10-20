@@ -1,6 +1,6 @@
 <!-- pasword4life "index.html" file -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
     <!-- head section -->
     <head>
@@ -17,8 +17,8 @@
         <!-- Resource Link "Favicon" element -->
         <link rel="icon" type="image/png" href="./Assets/favicon4.ico">
 
-        <!-- CSS Reset stylesheet link -->
-        <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+        <!-- CSS Reset stylesheet link !not needed!-->
+        <!-- <link rel="stylesheet" type="text/css" href="./CSS/reset.css"> -->
 
         <!-- CSS stylesheet link -->
         <link rel="stylesheet" href="./CSS/style.css">
@@ -29,27 +29,50 @@
     </head>
 
     <body>
+
+        <!-- Division class "wrapper" -->
         <div class="wrapper">
-        <header>
-            <h1>Password Generator</h1>
-        </header>
-        <div class="card">
-            <div class="card-header">
-            <h2>Generate a Password</h2>
+
+            <!-- Header Title -->
+            <header>
+                <h1>Password Generator</h1>
+            </header>
+
+            <!-- Card principle "div" tag -->
+            <div class="card">
+
+                <!-- "header" title within the card -->
+                <div class="card-header">
+                    <h2>Generate a Password</h2>
+                </div>
+
+                <!-- "div" tag with Card body (where the password is displayed) -->
+                <div class="card-body">
+
+                    <!-- text area where password will be shown, it contains instructions -->
+                    <textarea
+                        readonly
+                        id="password"
+                        placeholder="Click on the red button and generate your Secure Password"
+                        aria-label="Generated Password"
+                    ></textarea>
+
+                </div>
+
+                <!-- Red Button to generate password -->
+                <div class="card-footer">
+                    <button id="generate" class="btn">Generate Password</button>
+                </div>
+
             </div>
-            <div class="card-body">
-            <textarea
-                readonly
-                id="password"
-                placeholder="Your Secure Password"
-                aria-label="Generated Password"
-            ></textarea>
-            </div>
-            <div class="card-footer">
-            <button id="generate" class="btn">Generate Password</button>
-            </div>
+            <!-- Card principle "div" tag -->
+
         </div>
-        </div>
+        <!-- Division class "wrapper" -->
+
+
+        <!-- script containing JS "src" link -->
         <script src="./js/script.js"></script>
+
     </body>
 </html>
