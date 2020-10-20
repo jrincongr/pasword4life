@@ -52,7 +52,7 @@ function generatePassword(){
   var optionFourLowerVowels = confirm("Do you want lowercase vowel letters?");
   var optionFiveNumEven = confirm("Do you want even numbers?");
   var optionSixNumOdd = confirm("Do you want odd numbers?");
-  var optionSevenChar = confirm("Do you wnat special characters?");
+  var optionSevenChar = confirm("Do you want special characters?");
 
   // "uperCaseConsonant" statement
   if(optionOneUperConsonants === true){
@@ -107,3 +107,20 @@ function generatePassword(){
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+// copy password feauture
+function myFunction() {
+    /* Get the text field */
+    var copyText = document.getElementById("password");
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the password into clipboard: " + copyText.value);
+  }
