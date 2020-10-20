@@ -46,9 +46,9 @@ function generatePassword(){
     choiceLength = prompt("How many characters do you want in between 8 and 128??");
   }
   
-  var optionOneUperConsonants = confirm("Do you want upercase consonant leters?");
+  var optionOneUperConsonants = confirm("Do you want upercase consonant letters?");
   var optionTwoLowerConsonants = confirm("Do you want lowercase consonant letters?");
-  var optionThreeUperVowels = confirm("Do you want upercase vowel leters?");
+  var optionThreeUperVowels = confirm("Do you want upercase vowel letters?");
   var optionFourLowerVowels = confirm("Do you want lowercase vowel letters?");
   var optionFiveNumEven = confirm("Do you want even numbers?");
   var optionSixNumOdd = confirm("Do you want odd numbers?");
@@ -114,7 +114,7 @@ function myFunction() {
     /* Get the text field */
     var copyText = document.getElementById("password");
   
-    /* Select the text field */
+    /* text field */
     copyText.select();
     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
   
@@ -123,4 +123,4 @@ function myFunction() {
   
     /* Alert the copied text */
     alert("Copied the password into clipboard: " + copyText.value);
-  }
+}
