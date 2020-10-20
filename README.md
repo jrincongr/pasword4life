@@ -5,9 +5,11 @@ The name of the project was choosen because of what it is supposed to do, paswor
 ## URL
 
 ### Github aplication URL
+https://jrincongr.github.io/pasword4life/
 
 
 ### Github repository URL
+https://github.com/jrincongr/pasword4life 
 
 
 # Project:
