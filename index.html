@@ -1,34 +1,55 @@
+<!-- pasword4life "index.html" file -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
+
+    <!-- head section -->
+    <head>
+
+        <!-- Meta charset Character Encoding (UTF-8) -->
+        <meta charset="UTF-8">
+
+        <!-- responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Resource Link "Favicon" element -->
+        <link rel="icon" type="image/png" href="./Assets/favicon4.ico">
+
+        <!-- CSS Reset stylesheet link -->
+        <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+
+        <!-- CSS stylesheet link -->
+        <link rel="stylesheet" href="./CSS/style.css">
+
+        <!-- Webpage title -->
+        <title>Password4Life</title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+            <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+            <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+            ></textarea>
+            </div>
+            <div class="card-footer">
+            <button id="generate" class="btn">Generate Password</button>
+            </div>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
         </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
-    </div>
-    <script src="./js/script.js"></script>
-  </body>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
